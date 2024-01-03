@@ -6,12 +6,12 @@ a {
 .footer {
   background-color: #004658;
   color: #fff;
-    margin-top: 8%;
-    font: normal 17px Cookie, Arial, Helvetica, sans-serif;
+  margin-top: 8%;
+  font: normal 17px Cookie, Arial, Helvetica, sans-serif;
 }
 
 
-h1 > span{
+h1 > a >  span{
     color: #5383d3; 
 }
 

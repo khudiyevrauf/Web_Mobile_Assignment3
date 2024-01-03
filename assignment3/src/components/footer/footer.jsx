@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import style from "./footer.module.css";
 
 const footer = () => {
@@ -21,7 +22,7 @@ const footer = () => {
             <a className={style.footerLogoLink} href="#">
               <span className={style.hiddenLinkText}></span>
               <h1>
-                Assignment<span>3</span>
+                <Link to = "/">Assignment<span>3</span></Link>
               </h1>
             </a>
           </div>

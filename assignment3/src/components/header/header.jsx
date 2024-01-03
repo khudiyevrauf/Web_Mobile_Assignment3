@@ -7,15 +7,15 @@ const header = () => {
     <header className={style.headerFixed}>
       <div className={style.headerLimiter}>
         <h1>
-          <a href="#">
+          <Link to="/">
             Assignment<span>3</span>
-          </a>
+          </Link>
         </h1>
 
         <nav>
-          <a href="/" className={style.selected}>Home</a>
-          <a href="#">Cards</a>
-          <a href="../../pages/contact/contact.jsx" target="_blank">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/cards">Cards</Link>
+          <Link to="/contact" >Contact</Link>
         </nav>
       </div>
     </header>

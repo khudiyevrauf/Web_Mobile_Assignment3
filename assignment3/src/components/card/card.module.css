@@ -1,0 +1,204 @@
+.flashcard {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  text-align: center;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.side {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.front {
+  background-color: #1b4556;
+  color: white;
+}
+
+.back {
+  background-color: #f5f5f5;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.actions,
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.actionBtn,
+.optionBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.frontActions {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.flashcard:hover .frontActions {
+  opacity: 1;
+}
+
+.backActions {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.flashcard:hover .backActions {
+  opacity: 1;
+}
+
+.editBtn {
+  background-color: #3498db;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+}
+
+.learnedBtn {
+  background-color: #2ecc71;
+}
+
+.wantToLearnBtn {
+  background-color: #3498db;
+}
+
+.notedBtn {
+  background-color: #e74c3c;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.optionBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.learnedBtn {
+  background-color: #2ecc71;
+}
+
+.wantToLearnBtn {
+  background-color: #3498db;
+}
+
+.notedBtn {
+  background-color: #e74c3c;
+}
+
+/* RadioButton.module.css */
+
+.radioContainer {
+  text-align: center;
+}
+
+.title {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.radio {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radio__input {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 36px;
+  height: 20px;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Unchecked */
+.radio__label {
+  display: block;
+  padding: 0 0 0 24px;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+    border-radius: 14px;
+    z-index: 1;
+    transition: border-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #3f51b5; /* Replace with $accent-color if needed */
+    border-radius: 50%;
+    z-index: 2;
+    transform: scale(0, 0);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.radio__input:checked + .radio__label {
+  &:before {
+    border-color: #3f51b5; /* Replace with $accent-color if needed */
+  }
+
+  &:after {
+    transform: scale(1, 1);
+  }
+}
