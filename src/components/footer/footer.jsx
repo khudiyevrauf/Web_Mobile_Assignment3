@@ -1,5 +1,4 @@
-import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import style from "./footer.module.css";
 
 const footer = () => {
@@ -19,24 +18,32 @@ const footer = () => {
       <div className={style.footerContent}>
         <div className={style.footerContentColumn}>
           <div className={style.footerLogo}>
-            <a className={style.footerLogoLink} href="#">
+            <div className={style.footerLogoLink} href="#">
               <span className={style.hiddenLinkText}></span>
               <h1>
-                <Link to = "/">Assignment<span>3</span></Link>
+                <Link to="/">
+                  Assignment<span>3</span>
+                </Link>
               </h1>
-            </a>
+            </div>
           </div>
           <div className={style.footerMenu}>
             <h2 className={style.footerMenuName}> Get Started React</h2>
             <ul id="menu-get-started" className={style.footerMenuList}>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="https://react.dev/" target="blank">Start</a>
+                <a href="https://react.dev/" target="blank">
+                  Start
+                </a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="https://react.dev/reference/react" target="blank">Documentation</a>
+                <a href="https://react.dev/reference/react" target="blank">
+                  Documentation
+                </a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="https://react.dev/learn/installation" target="blank">Installation</a>
+                <a href="https://react.dev/learn/installation" target="blank">
+                  Installation
+                </a>
               </li>
             </ul>
           </div>
@@ -46,10 +53,17 @@ const footer = () => {
             <h2 className={style.footerMenuName}> ADA</h2>
             <ul id="menu-company" className={style.footerMenuList}>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="https://experience.elluciancloud.ie/au433700/" target="blank">MyADA</a>
+                <a
+                  href="https://experience.elluciancloud.ie/au433700/"
+                  target="blank"
+                >
+                  MyADA
+                </a>
               </li>
               <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="https://www.ada.edu.az/" target="blank">About</a>
+                <a href="https://www.ada.edu.az/" target="blank">
+                  About
+                </a>
               </li>
             </ul>
           </div>
@@ -134,8 +148,15 @@ const footer = () => {
             target="blank"
           >
             <span className={style.hiddenLinkText}>Instagram</span>
-            <svg className={style.footerIconSvg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-              <path className={style.footerIconPath} d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 "></path>
+            <svg
+              className={style.footerIconSvg}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 26 26"
+            >
+              <path
+                className={style.footerIconPath}
+                d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 "
+              ></path>
             </svg>
           </a>
           <a

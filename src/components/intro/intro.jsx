@@ -1,15 +1,14 @@
-import React from "react";
 import style from "./intro.module.css";
 import profilePic from "../../assets/images/IMG-20221220-WA0066.jpg";
 
-const main = () => {
+const Intro = () => {
   return (
     <div className={style.main}>
       <section className={style.intro}>
         <div>
           <h1>General Introduction</h1>
           <p>
-            I'm a{" "}
+            I&apos;m a{" "}
             <span className={`${style.bold} ${style.blue}`}>Rauf Khudiyev</span>{" "}
             who is student at{" "}
             <span className={style.bold}>ADA University(IT)</span> and{" "}
@@ -100,7 +99,10 @@ const main = () => {
           </div>
 
           <div className={style.cardLink}>
-            <a href="https://github.com/khudiyevrauf/Web_Mobile_Assignment3" title="Read Full">
+            <a
+              href="https://github.com/khudiyevrauf/Web_Mobile_Assignment3"
+              title="Read Full"
+            >
               <span>Visit Page</span>
             </a>
           </div>
@@ -110,4 +112,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Intro;

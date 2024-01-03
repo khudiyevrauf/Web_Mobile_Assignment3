@@ -1,6 +1,5 @@
-import React from "react";
-import style from "./header.module.css"
-import {Link} from 'react-router-dom'
+import style from "./header.module.css";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -15,7 +14,7 @@ const header = () => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/cards">Cards</Link>
-          <Link to="/contact" >Contact</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </div>
     </header>
