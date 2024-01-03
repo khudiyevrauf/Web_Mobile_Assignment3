@@ -52,6 +52,7 @@ const FlashCard = ({
         <p className={styles.text}>{question}</p>
         <div className={`${styles.actions} ${styles.frontActions}`}>
           <input
+            className={styles.cardCheck}
             type="checkbox"
             checked={isSelected}
             onChange={() => handleSelectedCard(id)}
@@ -118,6 +119,7 @@ const FlashCard = ({
         </div>
         <div className={`${styles.actions} ${styles.backActions}`}>
           <input
+            className={styles.cardCheck}
             type="checkbox"
             checked={isSelected}
             onChange={() => handleSelectedCard(id)}

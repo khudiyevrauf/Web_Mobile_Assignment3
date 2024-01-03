@@ -1,5 +1,5 @@
 .flashcard {
-  width: 300px;
+  width: 260px;
   height: 400px;
   perspective: 1000px;
   position: relative;
@@ -152,10 +152,10 @@
   position: absolute;
   top: 4px;
   left: 0;
-  width: 36px;
+  width: 15px;
   height: 20px;
   opacity: 0;
-  z-index: 0;
+  z-index: 3;
 }
 
 /* Unchecked */
@@ -167,8 +167,8 @@
   &:before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: 2px;
+    left: 1px;
     width: 16px;
     height: 16px;
     background-color: transparent;
@@ -181,11 +181,11 @@
   &:after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    background-color: #3f51b5; /* Replace with $accent-color if needed */
+    top: 7px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3f51b5;
     border-radius: 50%;
     z-index: 2;
     transform: scale(0, 0);
@@ -195,10 +195,46 @@
 
 .radio__input:checked + .radio__label {
   &:before {
-    border-color: #3f51b5; /* Replace with $accent-color if needed */
+    border-color: #3f51b5;
   }
 
   &:after {
     transform: scale(1, 1);
   }
+}
+
+.cardCheck {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+
+.cardCheck:checked {
+  background-color: #000;
+  opacity: 1;
+}
+
+.cardCheck:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
 }

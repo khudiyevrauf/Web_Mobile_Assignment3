@@ -1,5 +1,77 @@
-.allCards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.allCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+}
+
+.cardPage {
+  margin-top: 30px;
+}
+
+.topPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.searchPart {
+  width: 250px;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.options {
+  width: 130px;
+  border: 3px solid #00b4cc;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+}
+
+.cardButton{
+    width: 100px;
+    border: 3px solid #00b4cc;
+    background-color: white;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
 }
