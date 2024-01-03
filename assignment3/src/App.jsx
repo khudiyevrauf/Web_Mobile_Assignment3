@@ -1,12 +1,12 @@
 import './App.css'
+import Home from './pages/home/home'
 import Header from './components/header/header'
-import Main from './components/main/main'
+import Intro from './components/intro/intro'
 
 function App() {
   return (
     <>
-    <Header />
-    <Main />
+      <Home />
     </> 
   )
 }

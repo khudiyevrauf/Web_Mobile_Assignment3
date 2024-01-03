@@ -1,0 +1,205 @@
+.intro {
+  max-width: 38em;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  height: 200px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: #5383d3;
+}
+
+.intro > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+section > div > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+/* Projects */
+
+.categoryName {
+  font-family: sans-serif;
+  width: -webkit-fill-available;
+  text-align: center;
+  font-size: 40px;
+}
+
+.cardCategory{
+  font-family: sans-serif;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.cardCategory div{
+  display: inline-block;
+}
+
+.cardCategory > div{
+  margin: 10px 5px;
+  text-align: left;
+}
+
+.cardCategory{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.basicCard {
+  width: 300px;
+  position: relative;
+
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.basicCard .cardContent {
+  padding: 30px;
+}
+
+.basicCard .cardTitle {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.basicCard .cardText {
+  line-height: 1.6;
+}
+
+.basicCard .cardLink {
+  padding: 25px;
+  width: -webkit-fill-available;
+}
+
+.basicCard .cardLink a {
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.basicCard .cardLink a:after {
+  top: 30px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.basicCard .cardLink a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.basicCardAqua {
+  background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+}
+
+.basicCardAqua .cardContent,
+.basicCard .cardLink a {
+  color: #fff;
+}
+
+.basicCardAqua .cardLink {
+  border-top: 1px solid #82c1bb;
+}
+
+.basicCardAqua .cardLink a:after {
+  background: #fff;
+}
+
+.basicCardLips {
+  background-image: linear-gradient(to bottom right, #ec407b, #ff7d94);
+}
+
+.basicCardLips .cardContent {
+  color: #fff;
+}
+
+.basicCardLips .cardLink {
+  border-top: 1px solid #ff97ba;
+}
+
+.basicCardLips .cardLink a:after {
+  background: #fff;
+}
+
+.basicCardLight {
+  border: 1px solid #eee;
+}
+
+.basicCardLight .cardTitle,
+.basicCardLight .cardLink a {
+  color: #636363;
+}
+
+.basicCardLight .cardText {
+  color: #7b7b7b;
+}
+
+.basicCardLight .cardLink {
+  border-top: 1px solid #eee;
+}
+
+.basicCardLight .cardLink a:after {
+  background: #636363;
+}
+
+.basicCardDark {
+  background-image: linear-gradient(to bottom right, #252525, #4a4a4a);
+}
+
+.basicCardDark .cardTitle,
+.basicCardDark .cardLink a {
+  color: #eee;
+}
+
+.basicCardDark .cardText {
+  color: #dcdcdcdd;
+}
+
+.basicCardDark .cardLink {
+  border-top: 1px solid #636363;
+}
+
+.basicCardDark .cardLink a:after {
+  background: #eee;
+}
