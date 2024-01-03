@@ -18,7 +18,7 @@ const flashCard = () => {
         <FlashCard />
         <FlashCard />
       </div>
-      <Modal />
+      {/* <Modal /> */}
     </div>
   );
 };
