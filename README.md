@@ -1,6 +1,9 @@
 About
 In this Read.Me you will be  able know about and enter Assignment 3 website. Where you can find main info about me and FlashCard Page where you can create delete and edit questions and answers.
-You could also find live version of the webpage with this link(after entering the link click home button to proceed): ```bash https://khudiyevrauf.github.io/Web_Mobile_Assignment3/ ```
+You could also find live version of the webpage with this link(after entering the link click home button to proceed): 
+```bash
+https://khudiyevrauf.github.io/Web_Mobile_Assignment3/
+```
 
 Getting Started
 Steps are:
