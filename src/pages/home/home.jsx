@@ -1,4 +1,4 @@
-import Intro from "../../components/intro/Intro";
+import Intro from "../../components/intro/intro";
 
 const home = () => {
   return (
