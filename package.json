@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://khudiyevrauf.github.io/Web_Mobile_Assignment3/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

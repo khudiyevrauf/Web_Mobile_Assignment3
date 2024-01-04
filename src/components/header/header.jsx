@@ -6,15 +6,15 @@ const header = () => {
     <header className={style.headerFixed}>
       <div className={style.headerLimiter}>
         <h1>
-          <Link to="/">
+          <Link to="/Web_Mobile_Assignment3/">
             Assignment<span>3</span>
           </Link>
         </h1>
 
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/cards">Cards</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/Web_Mobile_Assignment3/">Home</Link>
+          <Link to="/Web_Mobile_Assignment3/cards">Cards</Link>
+          <Link to="/Web_Mobile_Assignment3/contact">Contact</Link>
         </nav>
       </div>
     </header>

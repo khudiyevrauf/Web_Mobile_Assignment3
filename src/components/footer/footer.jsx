@@ -21,7 +21,7 @@ const footer = () => {
             <div className={style.footerLogoLink} href="#">
               <span className={style.hiddenLinkText}></span>
               <h1>
-                <Link to="/">
+                <Link to="/Web_Mobile_Assignment3/">
                   Assignment<span>3</span>
                 </Link>
               </h1>

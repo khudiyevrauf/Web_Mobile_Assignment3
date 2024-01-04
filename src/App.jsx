@@ -11,9 +11,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cards" element={<FlashCards />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Web_Mobile_Assignment3/" element={<Home />} />
+        <Route path="/Web_Mobile_Assignment3/cards" element={<FlashCards />} />
+        <Route path="/Web_Mobile_Assignment3/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
